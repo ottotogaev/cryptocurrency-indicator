@@ -1,7 +1,6 @@
-const { log, error } = console;
 const express = require('express');
 const app = express();
-const server = app.listen(5000, log('Proxy server is running on port 5000'))
+const server = app.listen(5000, console.log('Proxy server is running on port 5000'))
 const got = require('got')
 const cors = require('cors');
 
